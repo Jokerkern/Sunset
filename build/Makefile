@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sunnet
+# Target rules for targets named sunset
 
 # Build rule for target.
-sunnet: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sunnet
-.PHONY : sunnet
+sunset: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sunset
+.PHONY : sunset
 
 # fast build rule for target.
-sunnet/fast:
-	$(MAKE) -f CMakeFiles/sunnet.dir/build.make CMakeFiles/sunnet.dir/build
-.PHONY : sunnet/fast
+sunset/fast:
+	$(MAKE) -f CMakeFiles/sunset.dir/build.make CMakeFiles/sunset.dir/build
+.PHONY : sunset/fast
 
 src/main.o: src/main.cpp.o
 
@@ -129,7 +129,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/sunnet.dir/build.make CMakeFiles/sunnet.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/sunset.dir/build.make CMakeFiles/sunset.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -138,7 +138,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/sunnet.dir/build.make CMakeFiles/sunnet.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/sunset.dir/build.make CMakeFiles/sunset.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -147,7 +147,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/sunnet.dir/build.make CMakeFiles/sunnet.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/sunset.dir/build.make CMakeFiles/sunset.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... sunnet"
+	@echo "... sunset"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
